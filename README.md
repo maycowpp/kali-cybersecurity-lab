@@ -57,7 +57,7 @@ Resultado: ausência de bloqueio após tentativas inválidas.
 ### 🖥️ SMB (Password Spraying)
 
 ```
-medusa -h 192.168.56.102 -U users.txt -p 123456 -M smbnt
+medusa -h 192.168.56.102 -U wordlist.txt -p pass.txt -M smbnt
 ```
 
 Resultado: identificação de usuários com senhas fracas.
